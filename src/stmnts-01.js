@@ -20,7 +20,7 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition
  */
 function nextInteger(int) {
-  // Implementation goes here.
+  return int + 1;
 }
 
 /**
@@ -31,7 +31,7 @@ function nextInteger(int) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function times(a, b) {
-  // Implementation goes here.
+  return a * b;
 }
 
 /**
@@ -42,7 +42,7 @@ function times(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition
  */
 function add(a, b) {
-  // Implementation goes here.
+  return a + b;
 }
 
 /**
@@ -53,7 +53,7 @@ function add(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction
  */
 function subtract(a, b) {
-  // Implementation goes here.
+  return a - b;
 }
 
 /**
@@ -64,7 +64,11 @@ function subtract(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division
  */
 function divide(a, b) {
-  // Implementation goes here.
+  if (b === 0) {
+    return NaN; // Division by zero returns NaN.
+  } else {
+    return a / b;
+  }
 }
 
 /**
@@ -75,7 +79,11 @@ function divide(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
  */
 function modulus(a, b) {
-  // Implementation goes here.
+  if (b === 0) {
+    return NaN;
+  } else {
+    return a % b;
+  }
 }
 
 // DO NOT CHANGE THE FOLLOWING EXPORT STATEMENT.
