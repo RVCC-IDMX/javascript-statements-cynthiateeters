@@ -1,4 +1,4 @@
-name: Autograding Tests YML
+name: Autograding Tests
 'on':
 - push
 - repository_dispatch
